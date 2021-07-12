@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="RU">
+
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="stylesheet" href="css/style.css">
+   <title>Currency converter</title>
+</head>
+
+<body>
+   <div class="wrapper">
+      <form class="form__body" action="#" id="form">
+         <h1 class="form__title">
+            Калькулятор конвертации валют
+         </h1>
+         <div class="form__item">
+            <label class="form__label" for="sumRub">Сумма, руб:</label>
+            <input class="form__input _req" id="sumRub" type="number" class="" name="sumRub" placeholder="0.00">
+         </div>
+         <div class="form__item">
+            <label class="form__label" for="select" name="valute" form="form">Валюта для конвертации</label>
+            <select id="select" name="valuteSelect" class="form__input">
+               <option value="EUR">Евро (EUR)</option>
+               <option value="USD">Доллар (USD)</option>
+            </select>
+         </div>
+         <div class="form__item">
+            <label class="form__label" for="result">Сумма в валюте</label>
+            <input class="form__input" id="result" type="number" placeholder="0.00" name="sumValute"
+               readonly="readonly">
+         </div>
+         <div class="form__item">
+            <label for="formEmail" class="form__label">E-mail:</label>
+            <input id="formEmail" type="text" name="email" class="form__input _req _email">
+         </div>
+         <button type="submit" class="form__button">Записаться на обмен валюты</button>
+      </form>
+   </div>
+   <script src="js/main.js"></script>
+   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+</body>
+
+</html>
+
+
+<!-- formName eto sumbRUb -->
+<!-- name - > rubli -->
